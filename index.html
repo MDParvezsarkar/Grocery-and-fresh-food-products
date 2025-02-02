@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="c2-assets/favicon.png" type="image/x-icon">
     <!-- Google font CDN -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,7 +13,8 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
 
-    <title>Document</title>
+    <title>Freshness You Can
+    Count On!</title>
     <script>
         tailwind.config = {
             theme: {
@@ -61,6 +63,13 @@
             .btn-primary {
                 @apply text-white bg-primary text-xl hover:scale-105 transition-transform duration-300 cursor-pointer px-8 py-4 rounded-lg;
             }
+            .grid-card {
+                @apply rounded-xl bg-secondary inline-flex items-center w-max px-3 py-3 gap-2 h-max justify-self-center bg-white;
+            }
+            .buynow {
+                @apply px-8 py-4 bg-white text-dark font-bold rounded-lg hover:scale-105 transition-transform duration-300 hover:shadow-lg;
+            }
+
         }
     </style>
 </head>
@@ -174,34 +183,184 @@
     <main>
         <!-- service section -->
         <section class="my-36 lg:w-10/12 mx-auto">
-            <h1 class="text-3xl lg:text-4xl text-primary font-semibold">Service</h1>
-            <!-- card box -->
-            <div class="grid grid-cols-1 lg:grid-cols-3 my-8 gap-6">
-                <!-- card 1 -->
+            <div class="mx-4 lg:mx-0">
+                <h1 class="text-3xl lg:text-4xl text-primary font-semibold">Service</h1>
+                <!-- card box -->
+                <div class="grid grid-cols-1 lg:grid-cols-3 my-8 gap-6">
+                    <!-- card 1 -->
                     <div class="bg-secondary text-center p-8 rounded-2xl">
-                       <div class="bg-white rounded-full inline-block mb-6"> <img src="c2-assets/service.png" alt="" class="p-8"> </div>
+                        <div class="bg-white rounded-full inline-block mb-6"> <img src="c2-assets/service.png" alt="" class="p-8">
+                        </div>
                         <h2 class="text-dark text-2xl font-bold mb-3">24/7 Services</h2>
                         <p class="text-xl text-dark">
                             Get your groceries delivered to your doorstep within hours!
                         </p>
                     </div>
-                <!-- card 2 -->
-                <div class="bg-secondary text-center p-8 rounded-2xl">
-                    <div class="bg-white rounded-full inline-block mb-6"> <img src="c2-assets/delivery.png" alt="" class="p-8"> </div>
-                    <h2 class="text-dark text-2xl font-bold mb-3">Quality Assurance</h2>
-                    <p class="text-xl text-dark">
-                        We ensure the highest quality standards for every product you choose.
-                    </p>
-                </div>
-                <!-- card 3 -->
-                <div class="bg-secondary text-center p-8 rounded-2xl ">
-                    <div class="bg-white rounded-full inline-block mb-6"> <img src="c2-assets/healthy.png" alt="" class="p-8"> </div>
-                    <h2 class="text-dark text-2xl font-bold mb-3">Healthy Products</h2>
-                    <p class="text-xl text-dark">
-                        Stock your kitchen with nutritious and healthy food options.
-                    </p>
+                    <!-- card 2 -->
+                    <div class="bg-secondary text-center p-8 rounded-2xl">
+                        <div class="bg-white rounded-full inline-block mb-6"> <img src="c2-assets/delivery.png" alt="" class="p-8">
+                        </div>
+                        <h2 class="text-dark text-2xl font-bold mb-3">Quality Assurance</h2>
+                        <p class="text-xl text-dark">
+                            We ensure the highest quality standards for every product you choose.
+                        </p>
+                    </div>
+                    <!-- card 3 -->
+                    <div class="bg-secondary text-center p-8 rounded-2xl ">
+                        <div class="bg-white rounded-full inline-block mb-6"> <img src="c2-assets/healthy.png" alt="" class="p-8">
+                        </div>
+                        <h2 class="text-dark text-2xl font-bold mb-3">Healthy Products</h2>
+                        <p class="text-xl text-dark">
+                            Stock your kitchen with nutritious and healthy food options.
+                        </p>
+                    </div>
                 </div>
             </div>
+        </section>
+        <!-- popular section -->
+        <section class="bg-secondary my-36">
+           <div class="lg:w-10/12 mx-auto py-36">
+            <div class="mx-4 lg:mx-0">
+                <h1 class="text-3xl lg:text-4xl text-primary font-semibold mb-8">Popular Products</h1>
+                <div class="lg:flex gap-6 py-8">
+                    <!-- left card -->
+                    <div class="">
+                        <div class="sm:h-[408px] rounded-2xl bg-gradient-to-br from-primary to-white p-8 max-w-max shadow-2xl lg:mx-0 mx-auto">
+                            <div class="space-y-4">
+                                <h1 class="text-3xl lg:text-4xl text-white font-semibold">30% Off</h1>
+                                <p class="text-dark text-xl">
+                                    Check out our best-selling items, <br>
+                                    loved by customers like you!
+                                </p>
+                                <button
+                                    class="buynow">BuyNow
+                                </button>
+                            </div>
+                            <div class="flex justify-end w-full">
+                                <img src="c2-assets/letus.png" alt="" class="size-32 animate-float mt-12">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- grid cards -->
+                    <div class="mt-4 lg:mt-0">
+                        <div class=" grid grid-cols-2 sm:grid-cols-3 gap-6">
+            
+                            <div class="grid-card">
+                                <img src="c2-assets/onion.webp" alt="" class="size-16 lg:size-24 rounded-lg">
+                                <div class="">
+                                    <div class="rating rating-sm">
+                                        <span class="inline-flex text-dark font-semibold text-sm lg:text-lg items-center">
+                                            <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400 mr-2" /> 4.5
+                                        </span>
+                                    </div>
+                                    <h4 class="text-dark font-semibold text-sm lg:text-lg">Onion 1KG</h4>
+                                    <h2 class="text-dark font-semibold text-xs lg:text-sm">$33.39</h2>
+                                </div>
+                            </div>
+                            <div class="grid-card">
+                                <img src="c2-assets/onion.webp" alt="" class="size-16 lg:size-24 rounded-lg">
+                                <div class="">
+                                    <div class="rating rating-sm">
+                                        <span class="inline-flex text-dark font-semibold text-sm lg:text-lg items-center">
+                                            <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400 mr-2" /> 4.5
+                                        </span>
+                                    </div>
+                                    <h4 class="text-dark font-semibold text-sm lg:text-lg">Onion 1KG</h4>
+                                    <h2 class="text-dark font-semibold text-xs lg:text-sm">$33.39</h2>
+                                </div>
+                            </div>
+                            <div class="grid-card">
+                                <img src="c2-assets/onion.webp" alt="" class="size-16 lg:size-24 rounded-lg">
+                                <div class="">
+                                    <div class="rating rating-sm">
+                                        <span class="inline-flex text-dark font-semibold text-sm lg:text-lg items-center">
+                                            <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400 mr-2" /> 4.5
+                                        </span>
+                                    </div>
+                                    <h4 class="text-dark font-semibold text-sm lg:text-lg">Onion 1KG</h4>
+                                    <h2 class="text-dark font-semibold text-xs lg:text-sm">$33.39</h2>
+                                </div>
+                            </div>
+                            <div class="grid-card">
+                                <img src="c2-assets/onion.webp" alt="" class="size-16 lg:size-24 rounded-lg">
+                                <div class="">
+                                    <div class="rating rating-sm">
+                                        <span class="inline-flex text-dark font-semibold text-sm lg:text-lg items-center">
+                                            <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400 mr-2" /> 4.5
+                                        </span>
+                                    </div>
+                                    <h4 class="text-dark font-semibold text-sm lg:text-lg">Onion 1KG</h4>
+                                    <h2 class="text-dark font-semibold text-xs lg:text-sm">$33.39</h2>
+                                </div>
+                            </div>
+                            <div class="grid-card">
+                                <img src="c2-assets/onion.webp" alt="" class="size-16 lg:size-24 rounded-lg">
+                                <div class="">
+                                    <div class="rating rating-sm">
+                                        <span class="inline-flex text-dark font-semibold text-sm lg:text-lg items-center">
+                                            <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400 mr-2" /> 4.5
+                                        </span>
+                                    </div>
+                                    <h4 class="text-dark font-semibold text-sm lg:text-lg">Onion 1KG</h4>
+                                    <h2 class="text-dark font-semibold text-xs lg:text-sm">$33.39</h2>
+                                </div>
+                            </div>
+                            <div class="grid-card">
+                                <img src="c2-assets/onion.webp" alt="" class="size-16 lg:size-24 rounded-lg">
+                                <div class="">
+                                    <div class="rating rating-sm">
+                                        <span class="inline-flex text-dark font-semibold text-sm lg:text-lg items-center">
+                                            <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400 mr-2" /> 4.5
+                                        </span>
+                                    </div>
+                                    <h4 class="text-dark font-semibold text-sm lg:text-lg">Onion 1KG</h4>
+                                    <h2 class="text-dark font-semibold text-xs lg:text-sm">$33.39</h2>
+                                </div>
+                            </div>
+                            <div class="grid-card">
+                                <img src="c2-assets/onion.webp" alt="" class="size-16 lg:size-24 rounded-lg">
+                                <div class="">
+                                    <div class="rating rating-sm">
+                                        <span class="inline-flex text-dark font-semibold text-sm lg:text-lg items-center">
+                                            <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400 mr-2" /> 4.5
+                                        </span>
+                                    </div>
+                                    <h4 class="text-dark font-semibold text-sm lg:text-lg">Onion 1KG</h4>
+                                    <h2 class="text-dark font-semibold text-xs lg:text-sm">$33.39</h2>
+                                </div>
+                            </div>
+                            <div class="grid-card">
+                                <img src="c2-assets/onion.webp" alt="" class="size-16 lg:size-24 rounded-lg">
+                                <div class="">
+                                    <div class="rating rating-sm">
+                                        <span class="inline-flex text-dark font-semibold text-sm lg:text-lg items-center">
+                                            <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400 mr-2" /> 4.5
+                                        </span>
+                                    </div>
+                                    <h4 class="text-dark font-semibold text-sm lg:text-lg">Onion 1KG</h4>
+                                    <h2 class="text-dark font-semibold text-xs lg:text-sm">$33.39</h2>
+                                </div>
+                            </div>
+                            <div class="grid-card">
+                                <img src="c2-assets/onion.webp" alt="" class="size-16 lg:size-24 rounded-lg">
+                                <div class="">
+                                    <div class="rating rating-sm">
+                                        <span class="inline-flex text-dark font-semibold text-sm lg:text-lg items-center">
+                                            <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400 mr-2" /> 4.5
+                                        </span>
+                                    </div>
+                                    <h4 class="text-dark font-semibold text-sm lg:text-lg">Onion 1KG</h4>
+                                    <h2 class="text-dark font-semibold text-xs lg:text-sm">$33.39</h2>
+                                </div>
+                            </div>
+                            
+                                
+            
+                        </div>
+                    </div>
+                </div>
+            </div>
+           </div>
         </section>
     </main>
 </body>
